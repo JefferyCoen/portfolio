@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font: 15px/1.5 Arial, Hevletica, sans-serif;
+    padding: 0;
+    background-color: red;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  /*header*/
+  header {
+    width: 100%; 
+    background: black;
+    color: #FFFFFF;
+    padding-top: 30px;
+    height: 125px;
+    border-bottom: #EF3B36 3px solid;
+    position: fixed; 
+    z-index: 6; 
+  }
+  header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header ul {
+    padding-right: 50px; 
+  }
+  header li {
+    float: left;
+    display: inline-flex;
+    padding: 0px 14px 0 14px;
+    margin-bottom: 10px;
+  }
+  header #brand {
+    float: left;
+  }
+  header #brand h1 {
+    margin: 0;
+  }
+  header #brand h1 span {
+    color: #EF3B36;
+    -webkit-animation-name: mark;
+    -webkit-animation-duration: 4s;
+    animation-name: mark; 
+    animation-duration: 4s; 
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header .current a {
+    color: #EF3B36;
+    font-weight: bold
+  }
+  header a:hover {
+    color: #EF3B36;
+  }
+  .logo {
+    width: 250px; 
+    padding-left: 50px;
+    position: relative; 
+    padding-bottom: 25px;  
+  }
+  #brand p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0 20px 0 95px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+  /*for Project Page*/
+.project {
+    background-color: white; 
+  }
+  .projects {
+    width: 65%; 
+    margin: auto;  
+    position: relative; 
+    top: 25px; 
+    padding-top: 200px;  
+  }
+  .budgeteerProject {
+    width: 100%; 
+    margin: auto;
+  }
+  .projectHead {
+    float: left;
+    width: 20%; 
+    height: 294px; 
+    border-right: solid 3px darkred;
+  }
+  .projectContents {
+    width: 78%;
+    margin-left: 20%;
+    padding-left: 35px; 
+    position: relative;   
+  }
+  .budgeteer {
+    padding-left: 30px;
+    padding-top: 25px; 
+    position: relative; 
+    right: 60px;  
+  }
+  .calculatorProject {
+      position: relative; 
+      bottom: 5px; 
+  }
+  .calculator {
+    width: 225px; 
+    padding-left: 50px; 
+    padding-top: 15px; 
+    position: relative; 
+    right: 60px; 
+  }
+  .casadeluma{
+    width: 250px; 
+    padding-top: 30px; 
+    position: relative; 
+    right: 60px; 
+  }
+  .casadelumaProject {
+    padding-top: 100px; 
+  }
+  .redeyetech {
+    width: 275px;
+    padding-right: 25px; 
+    padding-top: 60px;  
+    position: relative; 
+    right: 60px; 
+  }
+  .RedEyeTechProject {
+    padding-top: 100px; 
+  }
+  .footer4 {
+    position: relative; 
+    top: 150px; 
+  }
+  /* Footer */
+  footer {
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: black;
+    text-align: center;
+    border-top: solid 5px #EF3B36;
+  }
+  /*Bottom Nav*/
+  #bottom_nav {
+    text-align: center; 
+  }
+  #bottom_nav a {
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin:auto;
+  }
+  #bottom_nav nav li {
+    text-align: center; 
+    display: inline;
+    padding: 0px 14px 0 14px;
+  }
+  #bottom_nav a:hover {
+    color: #EF3B36;
+  }
+  /* Social Media */
+  #socialMedia {
+    width: 100%;
+    margin: auto; 
+  }
+  #socialMedia .icon {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+  }
+  #socialMedia .icon:hover {
+    cursor: pointer;
+  }
+  .githubPNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 16px;
+  }
+  .githubPNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17px; 
+  }
+  .linkedinPNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 17px; 
+  }
+  .linkedinPNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17px; 
+  }
+  .facebookPNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 17px;
+  }
+  .facebookPNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17px; 
+  }
+  .instagramPNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 18px;
+  }
+  .instagramPNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17px; 
+  }
+  .youtubePNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 17px;
+  }
+  .youtubePNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17px; 
+  }
+  .twitterPNG {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 17px;
+  }
+  .twitterPNG:hover {
+    border: solid 1px #EF3B36; 
+    border-radius: 17;
+  }
+  /***************************************
+  for tablets
+  ***************************************/
+  @media (max-width:1366px) {
+    .projects {
+        width: 80%;
+    }  
+    .projectContents {
+        width: 764px;
+        position: relative; 
+        left: 100px;  
+    }
+    .projectHead {
+        position: relative; 
+        left: 100px; 
+    }
+    .budgeteer {
+        width: 250px; 
+        position: relative; 
+        right: 100px; 
+    }
+    .calculator {
+        width: 250px; 
+        position: relative; 
+        right: 100px; 
+    }
+    .casadeluma {
+        width: 225px; 
+        position: relative; 
+        right: 65px; 
+    }
+    .redeyetech {
+        width: 225px; 
+        position: relative; 
+        right: 65px; 
+    }
+  }
+  @media (max-width: 1280px) {
+      .projects {
+          position: relative; 
+          left: 50px; 
+      }
+      .projectContents {
+          width: 545px; 
+      }
+      .projectHead {
+        position: relative; 
+        left: 100px; 
+    }
+    .budgeteer {
+        width: 200px; 
+        position: relative; 
+        right: 100px; 
+    }
+    .calculator {
+        width: 200px; 
+        position: relative; 
+        right: 100px; 
+        top: 25px; 
+    }
+    .casadeluma {
+        width: 200px; 
+        position: relative; 
+        right: 65px; 
+    }
+    .redeyetech {
+        width: 200px; 
+        position: relative; 
+        right: 65px; 
+    }
+    .RedEyeTechProject{
+        position: relative; 
+        bottom: 30px; 
+    }
+  }
+  @media (max-width: 900px) {
+      .projects {
+          position: relative; 
+          left: 20px; 
+          width: 750px; 
+      }
+      .projectContents {
+          width: 450px; 
+      }
+  } 
+/**********************************
+for phones
+**********************************/
+@media (max-width: 420px) {
+    #brand {
+      margin: auto; 
+      width: 100%;
+    }
+    .logo {
+      width: 250px;
+      position: relative;
+      left: 10px; 
+    }
+    header {
+      position: absolute;
+      height: 200px;
+    }
+    header ul {
+      padding-right: 0px;  
+      position: relative; 
+      bottom: 20px;
+      left: 20px; 
+    }
+    header li {
+      display: inline-block;
+      padding: 0px 8px 0 14px;
+      margin-bottom: 15px;
+      margin-right: 20px; 
+    }
+    header a {
+      font-size: 15px; 
+    }
+    .projectHead {
+        float: none;
+        border: none; 
+        position: relative;
+        left: 70px; 
+    }
+    .projects {
+        width: 300px;
+        margin: auto;
+        position: relative;
+        left: 10px;   
+        top: 100px; 
+        border-bottom: solid 1px black;
+    }
+    .projectContents {
+        width: 300px; 
+        position: relative; 
+        left: -90px; 
+    }
+    .budgeteer {
+        width: 150px; 
+    }
+    .budgeteerProject .projectContents {
+        position: relative; 
+        bottom: 95px; 
+    }
+    .calculator {
+        width: 175px; 
+        position: relative;
+        right: 115px;
+        top: -100px;  
+    }
+    .calculatorProject .projectContents {
+        position: relative;
+        bottom: 150px;
+    }
+    .casadeluma {
+        position: relative;
+        bottom: 220px; 
+    }
+    .casadelumaProject .projectContents {
+        position: relative;
+        bottom: 225px; 
+    }
+    .redeyetech {
+        position: relative; 
+        bottom: 200px; 
+    }
+    .RedEyeTechProject .projectContents {
+        position: relative; 
+        bottom: 250px; 
+    }
+}

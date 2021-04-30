@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.contactPage {
+  background-color: white; 
+  font: 15px/1.5 Arial, Hevletica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/*header*/
+header {
+  width: 100%; 
+  background: black;
+  color: #FFFFFF;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #EF3B36 3px solid;
+  position: fixed; 
+  z-index: 6; 
+}
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul {
+  padding-right: 50px; 
+}
+header li {
+  float: left;
+  display: inline-flex;
+  padding: 0px 14px 0 14px;
+  margin-bottom: 10px;
+}
+header #brand {
+  float: left;
+}
+header #brand h1 {
+  margin: 0;
+}
+header #brand h1 span {
+  color: #EF3B36;
+  -webkit-animation-name: mark;
+  -webkit-animation-duration: 4s;
+  animation-name: mark; 
+  animation-duration: 4s; 
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+header .current a {
+  color: #EF3B36;
+  font-weight: bold
+}
+header a:hover {
+  color: #EF3B36;
+}
+.logo {
+  width: 250px; 
+  padding-left: 50px;
+  position: relative; 
+  padding-bottom: 25px;  
+}
+#brand p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0 20px 0 95px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+.emailIcon {
+  width: 100px; 
+}
+.contactForm {
+  width: 85%; 
+  position: relative; 
+  top: 200px;
+  padding-bottom: 50px;
+  margin: auto; 
+  text-align: center; 
+}
+.formForContact {
+  padding-top: 30px; 
+}
+input {
+  margin-top: 10px;
+  height: 40px; 
+  width: 70%;  
+  padding-left: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  color: black;
+  outline: none; 
+}
+input[type=text],
+input[type=email],
+textarea[type=text] {
+  padding: 15px 5px;
+  border: solid 1px goldenrod;
+  background: #eee;
+  border-radius: 5px; 
+}
+input[type=text]:focus,
+input[type=email]:focus, 
+textarea[type=text]:focus {
+  background-color: white; 
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
+input::placeholder {
+  color: gray;
+}
+textarea {
+  margin-top: 10px; 
+  height: 150px; 
+  width: 70%; 
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  outline: none; 
+}
+textarea::placeholder {
+  color: gray; 
+}
+.btn {
+  border-radius: 5px; 
+  padding: 12px 20px;
+  border: none;
+  background-color: darkblue;
+  color: #fff;
+  cursor: pointer;
+  width: 45%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  font-weight:bold; 
+  outline: none; 
+}
+.btn:hover {
+  background-color:mediumblue;
+  font-style: italic;  
+}
+.btn:active {
+  outline: none; 
+}
+/* Footer */
+footer {
+  margin-top: 200px; 
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: black;
+  text-align: center;
+  border-top: solid 5px #EF3B36;
+}
+/*Bottom Nav*/
+#bottom_nav {
+  text-align: center; 
+}
+#bottom_nav a {
+  color: #FFFFFF;
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin:auto;
+}
+#bottom_nav nav li {
+  text-align: center; 
+  display: inline;
+  padding: 0px 14px 0 14px;
+}
+#bottom_nav a:hover {
+  color: #EF3B36;
+}
+/* Social Media */
+#socialMedia {
+  width: 30%;
+  margin: auto; 
+}
+#socialMedia .icon {
+  margin: 10px 10px 10px 0;
+  display: inline-block;
+}
+#socialMedia .icon:hover {
+  cursor: pointer;
+}
+.githubPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 16px;
+}
+.githubPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.linkedinPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px; 
+}
+.linkedinPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.facebookPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.facebookPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.instagramPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 18px;
+}
+.instagramPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.youtubePNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.youtubePNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.twitterPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.twitterPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}

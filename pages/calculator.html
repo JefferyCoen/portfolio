@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff | Calculator</title>
+    <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="/css/calculator.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <a href="/index.html"><img src="/img/logo.png" class="logo"></a>                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li class="current"><a href="/pages/projects.html">Projects</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="https://jeffredeyetech.blogspot.com/" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="calculators">
+        <!--For Basic Calculator-->
+        <div class="title">
+            <h2 class="name">Basic Calculator</h2>
+            <hr class="divider">
+        </div>
+        <!--calculator container-->
+        <div id="basicContainer">
+            <!--Need a way to view calcualtion results & inputs-->
+            <div class="calContainer">
+                <h5 class="konanLogo">K<span class="oh">()</span>NAN CODE</h5>
+                <form name="resultWindow">
+                    <input class="resultText" name="resultText" placeholder=0 readonly />
+                </form>
+            <!--Buttons for values and calcualtion methods-->
+                <table>
+                    <tr>
+                        <!-- <td><input class="button topRow blank"></td> -->
+                        <td><input class="button ce topRow" type="button" value="CE" onclick="clr()"></td>
+                        <td><input class="button del topRow" type="button" value="DEL" onclick="del()"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="+/-" onclick="insert('-')"></td>
+                        <td><input class="button" type="button" value="&#8730" onclick="sqrRoot()"></td>
+                        <td><input class="button" type="button" value="%" onclick="insert('%')"> </td>
+                        <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+                        <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+                        <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+                        <td><input class="button" type="button" value="*" onclick="insert('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+                        <td><input class="button" type="button" value="5"onclick="insert(5)"></td>
+                        <td><input class="button" type="button" value="6"onclick="insert(6)"></td>
+                        <td><input class="button" type="button" value="-"onclick="insert('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+                        <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+                        <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+                        <td><input class="button add" type="button" value="+" onclick="insert('+')"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input class="button zero" type="button" value="0" onclick="insert(0)"></td>
+                        <td><input class="button" type="button" value="&#46" onclick="insert('&#46')"></td>
+                        <td><input class="button equals" type="button" value="=" onclick="equals()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!------------------------------>
+        <!--For BMI Calculator-->
+        <div class="title">
+            <h2 class="name">BMI Calculator</h2>
+            <hr class="divider">
+        </div>
+        <div class=bmiCalculator>
+            <h5 class="konanLogo">K<span class="oh">()</span>NAN CODE</h5>
+            <h1 class="heading">Calculate Your BMI</h1>
+            <p class="direction1">Select Unit of Measurement:</p>
+            <!--US-->
+            <div class="measurement">
+                <input type="radio" id="US" name="units" value="Standard" onclick="hideMetric()" checked>
+                <label class="bmiLabel" for="US">Standard</label>
+            </div>
+        <!--Metric-->
+            <div class="measurement">
+                <input type="radio" id="metirc" name="units" value="Metric" onclick="hideUS()">
+                <label class="bmiLabel" for="metric">Metric</label>
+            </div>
+            <!--Forms-->
+            <div id="USForm">
+                <p class="direction1 direction2">Enter Measurements: </p>
+                <form class="usBMIForm">
+                    <label class="weightLabel usLabel">Weight in pounds: </label>
+                    <input class="weight lbs" id="lbs" placeholder="lbs" ></input>
+                    <br /> 
+                    <label class="usheight usHeight">Height:</label>
+                    <input class="feet" id="feet" placeholder="ft'"></input>
+                    <input class="inches"
+                    id="inches" placeholder='in"'></input>
+                </form>
+                <button class="bmiUsCal" onclick="calUs()">Calculate</button>
+                <div id="infoUs">
+                    <h1 id="yourUsBMI"></h1>
+                    <h3 id="conversion1Us"></h3>
+                    <h3 id="conversion2Us"></h3>
+                </div>
+            </div>
+            <div id="metricForm">
+                <p class="direction1 direction3">Enter Measurements: </p>
+                <form class="bmiForm">
+                    <label class="weightLabel metricLabel">Weight in kilograms: </label>
+                    <input class="weight metricInput" 
+                    id="kg"
+                    placeholder="kg"></input>
+                    <br /> 
+                    <label class="metricHeight">Height: </label> 
+                    <input class="cm" placeholder="cm" id="cm"></input>
+                </form>
+                <button class="bmiMCal" onclick="calMetric()">Calculate</button>
+                <div id="facts">
+                </div>
+                <div id="infoMetric">
+                    <h1 id="yourBMI"></h1>
+                    <h3 id="conversion1"></h3>
+                    <h3 id="conversion2"></h3>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <h3>Other Skills Include:</h3>
+            <p>Graphic Design<span class="highlight"> - </span>Socialmedia Marketing<span class="highlight"> - </span> Photography<span class="highlight"> - </span> Video & Audio Production</p>
+        </div>
+        <hr class="footerHr">
+        <p>Jeff Coen | Red Eye Tech &copy; 2021</p>
+        <br />
+        <div id="bottom_nav">
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://jeffredeyetech.blogspot.com/" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="socialMedia">
+            <div class="container">
+                <div class="icon">
+                    <a href="https://github.com/JefferyCoen" target="_blank"><img src="/img/github.png" class="githubPNG"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/jeff-coen-88a35769/" target="_blank"><img src="/img/linkedin.png" class="linkedinPNG"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.facebook.com/jeff.coen.754" target="_blank"><img src="/img/facebook.png" class="facebookPNG"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/jeffery_coen/" target="_blank"><img src="/img/instagram.png" class="instagramPNG"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.youtube.com/channel/UCYAK3djCgGDMf0WAJwpfEEQ" target="_blank"><img src="/img/youtube.png" class="youtubePNG"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://twitter.com/CoenJeffery" target="_blank"><img src="/img/twitter.png" class="twitterPNG"></a>
+                </div>
+                <br />
+            </div>
+        </div>
+    </footer>
+    <script src="/calculator.js"></script>
+</body>
+</html>

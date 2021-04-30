@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font: 15px/1.5 Arial, Hevletica, sans-serif;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+    background-color: darkred; 
+    background-image: url(/img/calBackground.jpg);
+    background-attachment: fixed; 
+    background-size: cover;  
+  }
+header {
+    width: 100%; 
+    background: black;
+    color: #FFFFFF;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #EF3B36 3px solid;
+    position: fixed; 
+    z-index: 6; 
+  }
+  header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header ul {
+    padding-right: 50px; 
+  }
+  header li {
+    float: left;
+    display: inline-flex;
+    padding: 0px 14px 0 14px;
+    margin-bottom: 10px;
+  }
+  header #brand {
+    float: left;
+  }
+  header #brand h1 {
+    margin: 0;
+  }
+  header #brand h1 span {
+    color: #EF3B36;
+    -webkit-animation-name: mark;
+    -webkit-animation-duration: 4s;
+    animation-name: mark; 
+    animation-duration: 4s; 
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header .current a {
+    color: #EF3B36;
+    font-weight: bold
+  }
+  header a:hover {
+    color: #EF3B36;
+  }
+  .logo {
+    width: 250px; 
+    padding-left: 50px;
+    position: relative; 
+    padding-bottom: 25px;  
+  }
+  #brand p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0 20px 0 95px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+#calculators {
+    width: 80%; 
+    height: 100%; 
+    margin: auto; 
+    padding-top: 100px;
+}
+/* For Basic Calculator */
+.calContainer{
+    width: 241px;
+    /* height: 330px; */
+    margin: auto;
+    margin-top: 50px; 
+}
+.resultText {
+    width: 240px; 
+    height: 50px;
+    border: none; 
+    border-radius: 10px; 
+    border-bottom: solid 1px darkslateblue;
+    background-color: whitesmoke;
+    position: relative; 
+    margin-bottom: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 5px; 
+    text-align: right;
+    outline: none; 
+}
+.button {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10px;  
+    border: none;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-right: 10px;
+    margin-bottom: 10px;  
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    cursor: pointer;
+    opacity: 75%; 
+}
+.button:hover {
+    background-color: white;
+    border-left: solid 1px blue; 
+    border-bottom: solid 1px blue;
+    opacity: 100%; 
+}
+.button:active{
+    opacity: 35%;  
+}
+.topRow {
+    height: 25px; 
+    border-radius: 5px;
+}
+.ce {
+    background-color: orangered;
+}
+.ce:hover{
+    background-color: orange;
+    opacity: 100%; 
+}
+.ce:active {
+    background-color: white;
+}
+.del {
+    background-color: orangered;
+}
+.del:hover{
+    background-color: orange;
+    opacity: 100%; 
+}
+.del:active {
+    background-color: white;
+}
+.konanLogo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+    color: white; 
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 10px; 
+}
+.oh {
+    font-weight: bolder;
+    color: orangered;
+}
+.zero {
+    width: 110px;
+}
+.equals {
+    background-color: lightblue; 
+}
+.equals:hover {
+    background-color: white;
+    opacity: 100%;
+}
+.equals:active {
+    opacity: 35%; 
+}
+/*//////////////////////////////////////////////*/
+/* For BMI Calculator */
+/*for Metric Measurements*/ 
+.bmiCalculator {
+    width: 80%; 
+    height: auto; 
+    margin: auto;
+    text-align: center;
+    /* padding-left: 35px;  */
+    position: relative; 
+    top: 30px; 
+}
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder; 
+    color: white; 
+    padding-bottom: 10px; 
+}
+.direction1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 14px; 
+    position: relative; 
+    top: 10px; 
+}
+.bmiLabel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white; 
+    font-size: 20px;     
+}
+.measurement {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding-right: 40px; 
+    position: relative; 
+    top: 30px;  
+}
+.direction2 {
+    position: relative; 
+    top: 50px; 
+}
+.usBMIForm {
+    position: relative; 
+    top: 50px; 
+}
+.weightLabel {
+    color: white; 
+    font-weight: bold; 
+    font-size: 25px;  
+}
+.usLabel {
+    position: relative; 
+    top: 11px;
+}
+.weight {
+    width: 85px; 
+    height: 30px; 
+    font-size: 20px;  
+    outline: none; 
+    border-radius: 5px; 
+    border-bottom: solid 1px blue;
+}
+.lbs {
+    position: relative; 
+    top: 11px; 
+    padding-left: 5px; 
+}
+.usheight {
+    color: white; 
+    font-weight: bold; 
+    font-size: 25px; 
+    position: relative; 
+    top: 30px; 
+}
+.feet {
+    width: 85px; 
+    height: 30px; 
+    font-size: 20px;  
+    padding-left: 5px;
+    outline: none; 
+    border-radius: 5px; 
+    border-bottom: solid 1px blue;
+    position: relative; 
+    top: 30px; 
+}
+.inches {
+    width: 85px; 
+    height: 30px; 
+    font-size: 20px;  
+    padding-left: 5px;
+    outline: none; 
+    border-radius: 5px; 
+    border-bottom: solid 1px blue;
+    position: relative; 
+    top: 30px; 
+}
+.bmiUsCal {
+    position: relative; 
+    top: 110px; 
+    outline: none; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: lightblue; 
+    color: purple;
+    width: 200px; 
+    height: 25px; 
+    cursor: pointer; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-style: italic;
+}
+.bmiUsCal:hover {
+    color: black; 
+    background-color: white; 
+}
+.bmiUsCal:active {
+    opacity:35%; 
+}
+#infoUs { 
+    border: none;
+    position: relative; 
+    top: 130px; 
+    color: white;
+    width: 100%; 
+    height: 80px; 
+}
+#metricForm {
+    visibility: hidden;
+    position: relative; 
+    bottom: 100px; 
+}
+.direction3 {
+    position: relative; 
+    top: -40px; 
+}
+.metricLabel {
+    position: relative; 
+    bottom: 29px; 
+}
+.metricInput {
+    position: relative; 
+    bottom: 29px; 
+    padding-left: 5px; 
+}
+.metricHeight {
+    color: white; 
+    font-weight: bold; 
+    font-size: 25px; 
+    position: relative; 
+    top: -10px;
+}
+.cm {
+    width: 85px; 
+    height: 30px; 
+    font-size: 20px;  
+    padding-left: 5px;
+    outline: none; 
+    border-radius: 5px; 
+    border-bottom: solid 1px blue;
+    position: relative; 
+    top: -10px;
+}
+.bmiMCal {
+    position: relative; 
+    top: 20px; 
+    outline: none; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: lightblue; 
+    color: purple;
+    width: 200px; 
+    height: 35px; 
+    cursor: pointer; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-style: italic; 
+}
+.bmiMCal:hover {
+    color: black; 
+    background-color: white; 
+}
+.bmiMCal:active {
+    opacity:35%; 
+}
+#infoMetric {
+    position: relative; 
+    top: 40px; 
+    color: white;
+}
+/*Global*/
+.title {
+    width: 75%;
+    margin: auto;
+}
+.name { 
+    position: relative; 
+    top: 75px; 
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-style: italic; 
+}
+.divider { 
+    margin-top: 75px; 
+}
+/* Footer */
+footer {
+    margin-top: 100px; 
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: black;
+    text-align: center;
+    border-top: solid 5px #EF3B36;
+}
+.footerHr {
+    border: #35424A solid 1px;
+    width: 75%; 
+    margin: auto;
+    opacity: 50%;
+}
+/*Bottom Nav*/
+#bottom_nav {
+  text-align: center; 
+}
+#bottom_nav a {
+  color: #FFFFFF;
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin:auto;
+}
+#bottom_nav nav li {
+  text-align: center; 
+  display: inline;
+  padding: 0px 14px 0 14px;
+}
+#bottom_nav a:hover {
+  color: #EF3B36;
+}
+/* Social Media */
+#socialMedia {
+  width: 30%;
+  margin: auto; 
+}
+#socialMedia .icon {
+  margin: 10px 10px 10px 0;
+  display: inline-block;
+}
+#socialMedia .icon:hover {
+  cursor: pointer;
+}
+.githubPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 16px;
+}
+.githubPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.linkedinPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px; 
+}
+.linkedinPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.facebookPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.facebookPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.instagramPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 18px;
+}
+.instagramPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.youtubePNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.youtubePNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+.twitterPNG {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ffffff;
+  border-radius: 17px;
+}
+.twitterPNG:hover {
+  border: solid 1px #EF3B36; 
+  border-radius: 17px; 
+}
+
